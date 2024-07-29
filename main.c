@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 static char*
 get_compression_path(const char *relpath)
@@ -20,7 +21,7 @@ get_compression_path(const char *relpath)
 
     _snprintf(pg_compression_path, 8192, "%sxxx", szDir);
 
-    return strdup(pg_compression_path);
+    return _strdup(pg_compression_path);
 }
 
 int main()
