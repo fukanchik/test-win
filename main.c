@@ -10,6 +10,7 @@ get_compression_path(const char *relpath)
     char szDir[_MAX_DIR];
     errno_t rc;
 
+    printf("DIR %s\n", _dirname(relpath));
     /* Not using 'drive' as relation_path is relative to $PGDATA */
     rc = _splitpath_s(relpath, NULL, 0, szDir1, _MAX_DIR, NULL, 0, NULL, 0);
     if (rc)
