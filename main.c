@@ -15,7 +15,7 @@ get_compression_path(const char *relpath)
     if (rc)
     return NULL;
 
-    szDir1[strlen(szDir1)] = 0;
+    szDir1[strlen(szDir1)-1] = 0;
 
     rc = _splitpath_s(szDir1, NULL, 0, szDir, _MAX_DIR, NULL, 0, NULL, 0);
     if (rc)
