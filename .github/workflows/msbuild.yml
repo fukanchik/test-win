@@ -30,4 +30,5 @@ jobs:
 
     - name: Test
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: ./Test.exe
+      #run: D:\\a\\test-win\\test-win\\debug\\Test.exe
+      run: debug/Test.exe
