@@ -1,0 +1,8 @@
+<Project>
+ <ItemGroup>
+  <Compile include="test.c" />
+ </ItemGroup>
+ <Target Name="Build">
+  <cl Sources="@(Compile)"/>
+ </Target>
+</Project>
