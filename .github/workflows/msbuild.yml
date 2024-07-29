@@ -34,3 +34,4 @@ jobs:
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       #run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} Test.proj -t:Build
       run: msbuild Test.vcxproj /p:configuration=debug
+      run: ./Test.exe
