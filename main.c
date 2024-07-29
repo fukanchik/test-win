@@ -18,14 +18,14 @@ get_compression_path(const char *relpath)
     if (rc)
         return NULL;
 
-    _snprintf(pg_compression_path, 8192, "%s\\xxx", szDir);
+    _snprintf(pg_compression_path, 8192, "%sxxx", szDir);
 
     return strdup(pg_compression_path);
 }
 
 int main()
 {
-  char *p = get_compression_path("a/b/c/d");
+  char *p = get_compression_path("a\\b\\c\\d");
   printf("%s\n", p);
   return 0;
 }
