@@ -18,7 +18,7 @@ get_compression_path(const char *relpath)
     if (rc)
         return NULL;
 
-    _snprintf(pg_comporession_path, "%s\\xxx", szDir);
+    _snprintf(pg_comporession_path, 8192, "%s\\xxx", szDir);
 
     return strdup(pg_compression_path);
 }
