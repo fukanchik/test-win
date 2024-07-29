@@ -32,4 +32,5 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} Test.fromscratchproj -t:Build
+      #run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} Test.proj -t:Build
+      run: msbuild Test.proj -t:Build
